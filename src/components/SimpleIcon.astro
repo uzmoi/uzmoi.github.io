@@ -1,0 +1,30 @@
+---
+import type { SimpleIcon } from "simple-icons";
+
+export interface Props extends astroHTML.JSX.SVGAttributes {
+  icon: Pick<SimpleIcon, "title" | "hex" | "path">;
+  color?: string;
+  title?: string;
+  size?: number;
+}
+
+const {
+  icon,
+  title = icon.title,
+  color = "currentColor",
+  size = 24,
+  ...props
+} = Astro.props;
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width={size}
+  height={size}
+  fill={color === "default" ? `#${icon.hex}` : color}
+  viewBox="0 0 24 24"
+  {...props}
+>
+  <title>{title}</title>
+  <path d={icon.path}></path>
+</svg>

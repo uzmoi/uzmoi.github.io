@@ -9,7 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.14.3"
+    "astro": "^5.14.3",
+    "simple-icons": "^15.16.1"
   },
   "devDependencies": {
     "better-typescript-lib": "^2.12.0",
