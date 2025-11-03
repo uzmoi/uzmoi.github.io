@@ -1,11 +1,58 @@
 ---
-import Welcome from "../components/welcome.astro";
+import { siGithub } from "simple-icons";
+import SimpleIcon from "../components/SimpleIcon.astro";
 import Layout from "../layouts/Layout.astro";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-  <Welcome />
+  <main>
+    <img
+      class="avatar"
+      src="https://avatars.githubusercontent.com/u/63585970"
+      alt=""
+      fetchpriority="high"
+      height="260"
+      width="260"
+    />
+    <div>
+      <h1>なつもい</h1>
+      <div>
+        <a href="https://github.com/uzmoi">
+          <SimpleIcon icon={siGithub} class="link-icon" /> GitHub
+        </a>
+      </div>
+    </div>
+  </main>
 </Layout>
+
+<style>
+  main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: center;
+    padding: 16px;
+    margin: auto;
+  }
+
+  .avatar {
+    border-radius: 50%;
+  }
+
+  h1 {
+    margin-block: 1rem;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  a:hover {
+    color: aquamarine;
+  }
+
+  .link-icon {
+    vertical-align: top;
+  }
+</style>
