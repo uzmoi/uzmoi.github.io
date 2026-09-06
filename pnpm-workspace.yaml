@@ -1,12 +1,9 @@
+allowBuilds:
+  "@parcel/watcher": false
+  esbuild: false
+  lefthook: true
+
 minimumReleaseAge: 10080 # 1 week
 
 publicHoistPattern:
   - "@typescript/*"
-
-ignoredBuiltDependencies:
-  - esbuild
-  - sharp
-  - "@parcel/watcher"
-
-onlyBuiltDependencies:
-  - lefthook
