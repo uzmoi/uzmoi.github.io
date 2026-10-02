@@ -9,16 +9,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.2.9",
-    "simple-icons": "^16.29.0"
+    "astro": "^7.3.5",
+    "simple-icons": "^16.32.0"
   },
   "devDependencies": {
     "better-typescript-lib": "^2.12.0",
-    "cspell": "^10.1.1",
-    "lefthook": "^2.1.12",
-    "prettier": "^3.9.6",
+    "cspell": "^10.3.4",
+    "lefthook": "^2.1.14",
+    "prettier": "^3.9.9",
     "prettier-plugin-astro": "^0.14.1",
-    "sass-embedded": "^1.103.1",
+    "sass-embedded": "^1.105.0",
     "sharp": "^0.35.4"
   }
 }
